@@ -82,14 +82,14 @@ class MainActivity: AppCompatActivity() {
         // 1. Generate FileInfo (which includes FileProvider URI)
         photoInfo = providerFileManager.generatePhotoUri(System.currentTimeMillis())
         // 2. Launch the camera activity, storing the result in the generated URI
-        takePictureLauncher.launch(photoInfo?.uri)
+        takePictureLauncher.launch(photoInfo!!.uri)
     }
 
     private fun openVideoCapture() {
         // 1. Generate FileInfo (which includes FileProvider URI)
         videoInfo = providerFileManager.generateVideoUri(System.currentTimeMillis())
         // 2. Launch the video recorder activity, storing the result in the generated URI
-        takeVideoLauncher.launch(videoInfo?.uri)
+        takeVideoLauncher.launch(videoInfo!!.uri)
     }
 
     // --- Permission Handling ---
