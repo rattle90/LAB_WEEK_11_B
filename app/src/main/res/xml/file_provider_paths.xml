@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path
+        android:name="photos"
+        android:path="Android/data/com.example.lab_week_11_b/files/Pictures" />
+    <external-path
+        android:name="videos"
+        android:path="Android/data/com.example.lab_week_11_b/files/Movies" />
+</paths>
